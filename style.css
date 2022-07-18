@@ -12,50 +12,51 @@ body{
     background-color: rgb(243, 243, 243);
     margin: 0;
     padding: 0;
-    /* display: flex; */
-    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .instagram-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 100%;
-    min-height: 100vh;
+    width: 60%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
 }
 .instagram-wrapper .instagram-phone-div{
     width: 50%;
     display: flex;
-    /* flex-direction: column; */
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin-left: auto;
-    margin-right: auto;
-}
-.instagram-phone-div .instagram-phone{
-    width: 80%;
+    justify-content: center;
+    align-content: center;
     /* margin-left: auto;
     margin-right: auto; */
 }
-.instagram-continue{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+.instagram-phone-div .instagram-phone{
+    height: 40rem;
     margin-left: auto;
     margin-right: auto;
-    /* font-size: clamp(0.5em, 1em + 1vw, 1.5em); */
 }
-.instagram-continue .white-group{
-    background-color: white;
+.instagram-continue{
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    justify-content: center; /*no exemplo ela usa space-around*/
     align-items: center;
-    padding: 20px;
-    width: 40%;
+    width: 50%;
+    min-height: 34rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.instagram-continue .white-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 1.3rem;
     border: 1px solid rgb(227, 227, 227);
     border-radius: 2px;
 }
@@ -96,7 +97,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35%;
+    width: 80%;
     margin: 0 2.5%;
 }
 .app-stores p{
@@ -112,17 +113,16 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* align-self: center; */
 }
 .app-item-apple{
     display: block;
-    max-width: 90%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 .app-item-google{
     display: block;
-    max-width: 90%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,9 +131,11 @@ body{
     justify-content: center;
 }
 .foot p{
-    margin: 10px;
+    margin: 1.2rem;
     color: rgb(150, 150, 150);
 }
+
+/* MOBILE */
 
 @media (max-width:1024px){
     .instagram-wrapper{
